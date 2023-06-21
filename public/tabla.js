@@ -5,7 +5,7 @@ const semanas = [
         herramientas: "Spring boot-Postgresql-Html-Java Script-Css-Google Cloud",
         link_documentos: "https://drive.google.com/drive/folders/19SXp8SlYZelTWo-1d8tFqxu62D8n7IyR?usp=share_link",
         fecha: "15/05/2023",
-        link_web: "http://storage.googleapis.com/sistemas-distribuidos-g2-sanmarcos/index.html"
+        link_web: "index.html"
     },
     {
         titulo:"Segunda Tarea",
@@ -13,7 +13,7 @@ const semanas = [
         herramientas: "Html-Java Script-Css-Google Cloud-Node-mongo_db",
         link_documentos: "https://drive.google.com/drive/folders/1LCszJS2kGEOkQD_yM1qEsB15lewOKack?usp=drive_link",
         fecha: "18/06/2023",
-        link_web: "http://storage.googleapis.com/sistemas-distribuidos-g2-sanmarcos/websocket.html"
+        link_web: "websocket.html"
     },
 ];
 
@@ -38,7 +38,7 @@ for(tarea of semanas){
     `
         <td class="tabla__clase">
         <a class="clase__elemento" href="${tarea.link_documentos}" target="__blank">
-            <img class="tabla__logo" src="./img/icon/drive.png" alt="tarea ${i+1}" title="tarea ${i+1}">
+            <img class="tabla__logo" src="img/icon/drive.png" alt="tarea ${i+1}" title="tarea ${i+1}">
             <span>tarea ${i+1}</span>
         </a>
         </td>
@@ -48,7 +48,7 @@ for(tarea of semanas){
     `
         <td class="tabla__clase">
         <a class="clase__elemento" href="${tarea.link_web}"">
-            <img class="tabla__logo" src="./img/icon/web.png" alt="web ${i+1}" title="web ${i+1}">
+            <img class="tabla__logo" src="img/icon/web.png" alt="web ${i+1}" title="web ${i+1}">
             <span>Link web ${i+1}</span>
         </a>
         </td>
@@ -64,7 +64,7 @@ for(tarea of semanas){
             let elemento = elementos[i].replace("%20","_").replace(" ","_");
             elemento_trabajo = elemento_trabajo + 
             `<div class="clase__elemento">
-            <img class="tabla__logo" src="./img/icon/${elemento}.png" alt="${elemento}" title="${elemento}">
+            <img class="tabla__logo" src="img/icon/${elemento}.png" alt="${elemento}" title="${elemento}">
             <span>${elemento.replace("_"," ")}</span>
             </div>`
         }
